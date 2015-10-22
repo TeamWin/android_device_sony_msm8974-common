@@ -5,6 +5,7 @@ $(uncompressed_ramdisk): $(INSTALLED_RAMDISK_TARGET)
 	gunzip -c $< > $@
 
 INITSH := $(LOCAL_PATH)/init.sh
+
 BOOTREC_DEVICE := $(PRODUCT_OUT)/root/bootrec-device
 
 DTBTOOL := $(HOST_OUT_EXECUTABLES)/dtbToolCM$(HOST_EXECUTABLE_SUFFIX)
